@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model batches {
+  id           Int          @id @default(autoincrement())
+  product_id   Int?
+  batch_number String       @db.VarChar(50)
+  quantity     Int          @default(0)
+  expiry_date  DateTime     @db.Date
+  promo_price  Decimal?     @db.Decimal(10, 2)
+  location     String?      @db.VarChar(50)
+  products     products?    @relation(fields: [product_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "fk_batches_product")
+  sale_items   sale_items[]
+
+  @@index([product_id], map: "product_id")
+}
+
+model products {
+  id          Int       @id @default(autoincrement())
+  sku         String    @unique(map: "sku") @db.VarChar(12)
+  name        String    @db.VarChar(150)
+  description String?   @db.Text
+  base_price  Decimal   @db.Decimal(10, 2)
+  category    String?   @db.VarChar(50)
+  batches     batches[]
+}
+
+model roles {
+  id    Int     @id @default(autoincrement())
+  name  String  @unique(map: "name") @db.VarChar(20)
+  users users[]
+}
+
+model sale_items {
+  id            Int      @id @default(autoincrement())
+  sale_id       Int?
+  batch_id      Int?
+  quantity      Int
+  price_at_sale Decimal  @db.Decimal(10, 2)
+  sales         sales?   @relation(fields: [sale_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "fk_saleitems_sale")
+  batches       batches? @relation(fields: [batch_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "fk_saleitems_batch")
+
+  @@index([batch_id], map: "batch_id")
+  @@index([sale_id], map: "sale_id")
+}
+
+model sales {
+  id           Int          @id @default(autoincrement())
+  user_id      Int?
+  sale_date    DateTime?    @default(now()) @db.Timestamp(0)
+  total_amount Decimal      @db.Decimal(10, 2)
+  sale_items   sale_items[]
+  users        users?       @relation(fields: [user_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "fk_sales_user")
+
+  @@index([user_id], map: "user_id")
+}
+
+model users {
+  id       Int     @id @default(autoincrement())
+  name     String  @db.VarChar(100)
+  email    String  @unique(map: "email") @db.VarChar(100)
+  password String  @db.VarChar(255)
+  role_id  Int?
+  sales    sales[]
+  roles    roles?  @relation(fields: [role_id], references: [id], onDelete: Cascade, onUpdate: Restrict, map: "fk_users_role")
+
+  @@index([role_id], map: "role_id")
+}
