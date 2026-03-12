@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Servicio que encapsula la lógica de negocio y consultas a la base de datos para la entidad de Product.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import prisma from '../config/prisma';
 import { nanoid } from 'nanoid';
 import { CreateProductInput, UpdateProductInput } from '../validators/product.validator';
@@ -33,6 +37,9 @@ class ProductService {
                 description: data.description ?? null,
                 base_price: data.base_price,
                 category: data.category ?? null,
+                brand: data.brand ?? null,
+                supplier_id: data.supplier_id ?? null,
+                min_stock: data.min_stock ?? 10,
                 // Si se envían lotes, se crean anidados con create
                 ...(data.batches && data.batches.length > 0 && {
                     batches: {
@@ -63,8 +70,42 @@ class ProductService {
                 batches: {
                     orderBy: { expiry_date: 'asc' },
                 },
+                suppliers: true,
             },
         });
+    }
+
+    /**
+     * Busca productos por nombre para sugerir medicamentos con stock en consultas.
+     */
+    async searchProducts(query: string) {
+        if (!query || query.length < 2) return [];
+        
+        const products = await prisma.products.findMany({
+            where: {
+                OR: [
+                    { name: { contains: query } },
+                    { brand: { contains: query } }
+                ]
+            },
+            include: {
+                batches: {
+                    where: {
+                        expiry_date: { gt: new Date() },
+                        quantity: { gt: 0 }
+                    }
+                }
+            },
+            take: 10
+        });
+
+        // Formatear para el frontend calculando el stock total de lotes vigentes
+        return products.map(p => ({
+            id: p.id,
+            sku: p.sku,
+            name: p.name,
+            totalStock: p.batches.reduce((sum, b) => sum + b.quantity, 0)
+        })).filter(p => p.totalStock > 0);
     }
 
     /**
@@ -77,6 +118,7 @@ class ProductService {
                 batches: {
                     orderBy: { expiry_date: 'asc' },
                 },
+                suppliers: true,
             },
         });
 
@@ -104,6 +146,9 @@ class ProductService {
                 ...(data.description !== undefined && { description: data.description }),
                 ...(data.base_price !== undefined && { base_price: data.base_price }),
                 ...(data.category !== undefined && { category: data.category }),
+                ...(data.brand !== undefined && { brand: data.brand }),
+                ...(data.supplier_id !== undefined && { supplier_id: data.supplier_id }),
+                ...(data.min_stock !== undefined && { min_stock: data.min_stock }),
             },
             include: {
                 batches: true,

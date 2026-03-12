@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Controlador para manejar las peticiones HTTP (req, res) relacionadas con sale.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import { Request, Response, NextFunction } from 'express';
 import saleService from '../services/SaleService';
 
@@ -23,4 +27,49 @@ const createSale = async (req: Request, res: Response, next: NextFunction): Prom
     }
 };
 
-export { createSale };
+// @desc    Lista todas las ventas
+// @route   GET /api/sales
+// @access  Privado (Solo Admin)
+const getSales = async (_req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+        const sales = await saleService.getAllSales();
+        res.json(sales);
+    } catch (error) {
+        next(error);
+    }
+};
+
+// @desc    Obtiene detalle de una venta
+// @route   GET /api/sales/:id
+// @access  Privado (Solo Admin)
+const getSaleById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+        const sale = await saleService.getSaleById(Number(req.params.id));
+        res.json(sale);
+    } catch (error) {
+        if (error instanceof Error && error.message.includes('no encontrada')) {
+            res.status(404);
+        }
+        next(error);
+    }
+};
+// @desc    Anula una venta y revierte stock
+// @route   POST /api/sales/:id/void
+// @access  Privado (Solo Admin)
+const voidSale = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+        const sale = await saleService.voidSale(Number(req.params.id));
+        res.json({ message: 'Venta anulada exitosamente', sale });
+    } catch (error) {
+        if (error instanceof Error) {
+            if (error.message.includes('no encontrada')) {
+                res.status(404);
+            } else if (error.message.includes('ya fue anulada')) {
+                res.status(400);
+            }
+        }
+        next(error);
+    }
+};
+
+export { createSale, getSales, getSaleById, voidSale };

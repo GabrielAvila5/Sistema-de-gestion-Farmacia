@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Controlador para manejar las peticiones HTTP (req, res) relacionadas con product.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import { Request, Response, NextFunction } from 'express';
 import productService from '../services/ProductService';
 
@@ -86,10 +90,24 @@ const deleteProduct = async (req: Request, res: Response, next: NextFunction): P
     }
 };
 
+// @desc    Busca productos (con stock vigente) por término
+// @route   GET /api/products/search
+// @access  Privado (Admin/Doctor/Employee)
+const searchProducts = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+        const q = req.query.q as string;
+        const products = await productService.searchProducts(q || '');
+        res.json(products);
+    } catch (error) {
+        next(error);
+    }
+};
+
 export {
     createProduct,
     getProducts,
     getProductById,
     updateProduct,
     deleteProduct,
+    searchProducts,
 };

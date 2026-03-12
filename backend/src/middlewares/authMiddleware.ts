@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Middleware para verificar la autenticación del usuario mediante tokens JWT.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 

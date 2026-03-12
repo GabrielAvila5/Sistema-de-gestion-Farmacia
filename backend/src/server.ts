@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Punto de entrada principal del backend. Inicia el servidor HTTP y escucha conexiones.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 // Carga las variables de entorno PRIMERO, antes de cualquier otra importación
 // Usamos require directo para garantizar que se ejecute antes de que
 // PrismaClient se instancie (las importaciones ES se hoistean)

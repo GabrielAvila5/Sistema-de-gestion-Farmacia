@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Define los endpoints (rutas) de la API para product y enlaza sus respectivos controladores.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import express from 'express';
 import {
     createProduct,
@@ -5,6 +9,7 @@ import {
     getProductById,
     updateProduct,
     deleteProduct,
+    searchProducts
 } from '../controllers/productController';
 import { createProductSchema, updateProductSchema } from '../validators/product.validator';
 import { validateBody } from '../middlewares/validateBody';
@@ -15,6 +20,9 @@ const router = express.Router();
 
 // Middleware global para proteger todas las rutas de productos (requiere JWT válido)
 router.use(authenticate);
+
+// GET /api/products/search → buscar productos para autocompletado en consultas
+router.get('/search', checkRole(['admin', 'employee', 'doctor']), searchProducts);
 
 // GET /api/products     → lista todos los productos con sus lotes (admin, employee)
 // POST /api/products    → crea un producto (solo admin)

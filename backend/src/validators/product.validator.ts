@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Esquemas de validación de datos para asegurar un formato correcto de entrada en la entidad de product.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import { z } from 'zod';
 
 // Schema del lote (batch) reutilizable
@@ -18,6 +22,9 @@ export const createProductSchema = z.object({
     description: z.string().optional(),
     base_price: z.number().positive('El precio debe ser mayor a 0'),
     category: z.string().optional(),
+    brand: z.string().optional(),
+    supplier_id: z.number().int().positive().optional().nullable(),
+    min_stock: z.number().int().min(0).optional(),
     // Lotes: array de lotes a crear junto al producto
     batches: z.array(batchSchema).optional(),
 });
@@ -28,6 +35,9 @@ export const updateProductSchema = z.object({
     description: z.string().optional(),
     base_price: z.number().positive().optional(),
     category: z.string().optional(),
+    brand: z.string().optional(),
+    supplier_id: z.number().int().positive().optional().nullable(),
+    min_stock: z.number().int().min(0).optional(),
 });
 
 export type CreateProductInput = z.infer<typeof createProductSchema>;

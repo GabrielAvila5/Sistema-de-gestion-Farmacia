@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Configuración principal de la aplicación Express, middlewares globales y montaje de rutas.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 // Dependencias principales: Express, CORS, Helmet (seguridad) y Morgan (logs HTTP)
 import express from 'express';
 import cors from 'cors';
@@ -10,6 +14,22 @@ import productRoutes from './routes/productRoutes';
 import saleRoutes from './routes/saleRoutes';
 // Rutas de autenticación
 import authRoutes from './routes/authRoutes';
+// Rutas Clínicas nuevas
+import patientRoutes from './routes/patientRoutes';
+import appointmentRoutes from './routes/appointmentRoutes';
+import prescriptionRoutes from './routes/prescriptionRoutes';
+// Rutas de Estadísticas Generales
+import dashboardRoutes from './routes/dashboardRoutes';
+// Rutas de Gestión de Usuarios
+import userRoutes from './routes/userRoutes';
+// Rutas de Consultas del Expediente Clínico
+import consultationRoutes from './routes/consultationRoutes';
+// Rutas de Proveedores
+import supplierRoutes from './routes/supplierRoutes';
+// Rutas de Órdenes de Compra
+import purchaseOrderRoutes from './routes/purchaseOrderRoutes';
+// Rutas de Movimientos de Inventario
+import stockRoutes from './routes/stockRoutes';
 
 // Crea la instancia de la aplicación Express
 const app = express();
@@ -29,6 +49,15 @@ app.use(morgan('dev'));    // Registra cada petición HTTP en consola (modo desa
 app.use('/api/auth', authRoutes);        // Rutas de autenticación
 app.use('/api/products', productRoutes); // Rutas para gestión de productos
 app.use('/api/sales', saleRoutes);       // Rutas para gestión de ventas
+app.use('/api/patients', patientRoutes); // Rutas para gestión de pacientes
+app.use('/api/appointments', appointmentRoutes); // Rutas para gestión de citas
+app.use('/api/prescriptions', prescriptionRoutes); // Generador de recetas PDF
+app.use('/api/dashboard', dashboardRoutes); // Panel de Estadísticas Generales
+app.use('/api/users', userRoutes);           // Gestión de Usuarios
+app.use('/api/consultations', consultationRoutes); // Expediente Cronológico
+app.use('/api/suppliers', supplierRoutes);   // Gestión de Proveedores
+app.use('/api/purchase-orders', purchaseOrderRoutes); // Gestión de Órdenes de Compra
+app.use('/api/stock', stockRoutes);          // Movimientos y Ajustes de Inventario
 
 // Ruta raíz: confirma que la API está activa
 app.get('/', (_req, res) => {

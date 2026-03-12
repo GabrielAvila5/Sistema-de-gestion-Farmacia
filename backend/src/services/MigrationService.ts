@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Servicio que encapsula la lógica de negocio y consultas a la base de datos para la entidad de Migration.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import prisma from '../config/prisma';
 import fs from 'fs';
 

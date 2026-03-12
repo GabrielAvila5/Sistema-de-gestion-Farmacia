@@ -1,0 +1,1868 @@
+[2026-03-09 14:50:24:5024] error: Credenciales inválidas
+Stack: Error: Credenciales inválidas
+    at AuthService.login (C:\Users\gabri\Anti\backend\src\services\AuthService.ts:24:19)
+    at login (C:\Users\gabri\Anti\backend\src\controllers\authController.ts:19:28)
+Context: {
+  "method": "POST",
+  "url": "/api/auth/login",
+  "body": {
+    "email": "maria@gmail.com",
+    "password": "maria123"
+  },
+  "ip": "::ffff:127.0.0.1",
+  "user": "Unauthenticated"
+}
+[2026-03-09 14:50:31:5031] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:31:5031] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:31:5031] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:31:5031] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:31:5031] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:31:5031] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:33:5033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:33:5033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:33:5033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:33:5033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:33:5033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:33:5033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:36:5036] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/patients",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:36:5036] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/patients",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:36:5036] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/users",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:36:5036] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/users",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:36:5036] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/appointments",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:36:5036] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/appointments",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:37:5037] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:37:5037] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:37:5037] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:37:5037] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:50:5050] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/appointments",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:50:5050] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/users",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:50:5050] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/appointments",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:50:5050] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/users",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:51:5051] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/patients",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:51:5051] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/patients",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:57:5057] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/appointments",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:57:5057] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/users",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:57:5057] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/appointments",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:50:57:5057] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/users",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:51:24:5124] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:51:24:5124] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:51:24:5124] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:51:24:5124] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:51:33:5133] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:33:5233] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:37:5237] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/patients",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:37:5237] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/patients",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:38:5238] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/appointments",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:38:5238] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/users",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:38:5238] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/appointments",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:38:5238] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/users",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:39:5239] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/patients",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:52:39:5239] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/patients",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:53:33:5333] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:54:33:5433] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:55:33:5533] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:56:33:5633] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:57:33:5733] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:58:33:5833] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:59:33:5933] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:59:48:5948] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:59:48:5948] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:59:48:5948] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 14:59:48:5948] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:00:33:033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:01:33:133] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:02:33:233] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:03:33:333] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:04:33:433] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:05:33:533] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:06:33:633] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:07:33:733] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:08:33:833] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:09:33:933] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:10:33:1033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:11:33:1133] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:12:33:1233] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:13:33:1333] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:14:33:1433] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:15:33:1533] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:16:33:1633] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:17:33:1733] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:18:33:1833] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:19:33:1933] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:20:33:2033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:21:33:2133] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:22:33:2233] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:23:33:2333] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:24:33:2433] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:25:33:2533] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:26:33:2633] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:27:33:2733] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:28:33:2833] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:29:33:2933] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:30:33:3033] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:31:33:3133] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:32:33:3233] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:33:33:3333] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:34:33:3433] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:35:33:3533] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:36:33:3633] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:37:33:3733] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:38:33:3833] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-09 15:39:33:3933] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-10 09:08:43:843] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-10 09:08:43:843] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-10 09:08:43:843] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-10 09:08:43:843] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/charts",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-10 09:08:43:843] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}
+[2026-03-10 09:08:43:843] error: Acceso denegado, no tienes los permisos necesarios
+Stack: Error: Acceso denegado, no tienes los permisos necesarios
+    at C:\Users\gabri\Anti\backend\src\middlewares\roleMiddleware.ts:27:25
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\gabri\Anti\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\gabri\Anti\backend\node_modules\router\index.js:291:5)
+    at authenticate (C:\Users\gabri\Anti\backend\src\middlewares\authMiddleware.ts:34:9)
+    at Layer.handleRequest (C:\Users\gabri\Anti\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\gabri\Anti\backend\node_modules\router\index.js:342:13)
+    at C:\Users\gabri\Anti\backend\node_modules\router\index.js:297:9
+Context: {
+  "method": "GET",
+  "url": "/api/dashboard/summary",
+  "ip": "::ffff:127.0.0.1",
+  "user": 2
+}

@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Esquemas de validación de datos para asegurar un formato correcto de entrada en la entidad de auth.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import { z } from 'zod';
 
 export const loginSchema = z.object({

@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Servicio que encapsula la lógica de negocio y consultas a la base de datos para la entidad de Auth.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import prisma from '../config/prisma';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
@@ -25,6 +29,11 @@ class AuthService {
 
         if (!isPasswordValid) {
             throw new Error('Credenciales inválidas'); // Password incorrect
+        }
+
+        // Bloquear login de usuarios desactivados
+        if (!user.is_active) {
+            throw new Error('Tu cuenta ha sido desactivada. Contacta al administrador.');
         }
 
         const jwtSecret = process.env.JWT_SECRET;

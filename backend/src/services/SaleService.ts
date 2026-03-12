@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Servicio que encapsula la lógica de negocio y consultas a la base de datos para la entidad de Sale.
+ * Descripción generada automáticamente para documentar la funcionalidad principal del archivo.
+ */
 import prisma from '../config/prisma';
 import { CreateSaleInput } from '../validators/sale.validator';
 import { Prisma } from '@prisma/client';
@@ -15,7 +19,7 @@ class SaleService {
      */
     async createSale(saleData: CreateSaleInput) {
         return prisma.$transaction(async (tx: Prisma.TransactionClient) => {
-            const { user_id, items } = saleData;
+            const { user_id, items, payment_method = 'cash', amount_paid } = saleData;
             let totalAmount = 0;
 
             // Verifica que el usuario existe
@@ -29,6 +33,8 @@ class SaleService {
                 data: {
                     user_id,
                     total_amount: 0, // Se actualizará después
+                    payment_method,
+                    amount_paid: amount_paid ?? null,
                 },
             });
 
@@ -100,6 +106,15 @@ class SaleService {
                 }
             }
 
+            // Regla de negocio: si paga en efectivo, el monto recibido debe cubrir el total
+            if (payment_method === 'cash' && amount_paid !== undefined && amount_paid < totalAmount) {
+                throw new Error(
+                    `Monto recibido insuficiente. ` +
+                    `Total de la venta: $${totalAmount.toFixed(2)}, ` +
+                    `Monto recibido: $${amount_paid.toFixed(2)}`
+                );
+            }
+
             // Actualiza el total de la venta
             const updatedSale = await tx.sales.update({
                 where: { id: sale.id },
@@ -117,6 +132,112 @@ class SaleService {
             });
 
             return updatedSale;
+        });
+    }
+
+    // Lista todas las ventas con información del vendedor y items
+    async getAllSales() {
+        return prisma.sales.findMany({
+            orderBy: { sale_date: 'desc' },
+            include: {
+                users: {
+                    select: { id: true, name: true, email: true },
+                },
+                sale_items: {
+                    include: {
+                        batches: {
+                            include: {
+                                products: {
+                                    select: { id: true, name: true, sku: true, category: true },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        });
+    }
+
+    // Obtiene una venta por ID con detalle completo
+    async getSaleById(id: number) {
+        const sale = await prisma.sales.findUnique({
+            where: { id },
+            include: {
+                users: {
+                    select: { id: true, name: true, email: true },
+                },
+                sale_items: {
+                    include: {
+                        batches: {
+                            include: {
+                                products: {
+                                    select: { id: true, name: true, sku: true, category: true, base_price: true },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        });
+
+        if (!sale) throw new Error('Venta no encontrada');
+        return sale;
+    }
+
+    /**
+     * Anula una venta y revierte el stock a los lotes correspondientes
+     */
+    async voidSale(saleId: number) {
+        return prisma.$transaction(async (tx: Prisma.TransactionClient) => {
+            // Verificar que la venta existe
+            const sale = await tx.sales.findUnique({
+                where: { id: saleId },
+                include: { sale_items: true },
+            });
+
+            if (!sale) {
+                throw new Error('Venta no encontrada.');
+            }
+
+            if (sale.status === 'voided') {
+                throw new Error('Esta venta ya fue anulada.');
+            }
+
+            // Revertir stock de cada item al lote correspondiente
+            for (const item of sale.sale_items) {
+                if (item.batch_id) {
+                    await tx.batches.update({
+                        where: { id: item.batch_id },
+                        data: {
+                            quantity: { increment: item.quantity },
+                        },
+                    });
+                }
+            }
+
+            // Marcar la venta como anulada
+            const voidedSale = await tx.sales.update({
+                where: { id: saleId },
+                data: { status: 'voided' },
+                include: {
+                    users: {
+                        select: { id: true, name: true, email: true },
+                    },
+                    sale_items: {
+                        include: {
+                            batches: {
+                                include: {
+                                    products: {
+                                        select: { id: true, name: true, sku: true },
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            });
+
+            return voidedSale;
         });
     }
 }

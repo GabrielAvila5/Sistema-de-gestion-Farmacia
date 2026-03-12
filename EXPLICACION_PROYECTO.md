@@ -1,253 +1,117 @@
-# Sistema de Gestión para Farmacia — Explicación del Proyecto
+# Sistema de Gestión para Farmacia — Explicación del Proyecto (FarmaGestión)
 
 ## 📋 Descripción General
 
-Este proyecto es un **Sistema de Gestión Clínica y Administrativa** diseñado para una farmacia. Su objetivo principal es gestionar de forma integral las operaciones del negocio: control de inventario de productos farmacéuticos, registro de ventas, gestión de pacientes, citas médicas y usuarios del sistema.
+**FarmaGestión** es un sistema integral diseñado para la gestión clínica y administrativa de una farmacia moderna. El sistema permite controlar el ciclo completo del negocio: desde la recepción de productos médicos y control de lotes (caducidad), hasta el registro de ventas, historial de transacciones, panel de control con métricas en tiempo real y gestión de pacientes con agenda de citas.
 
-El backend está construido como una **API REST** utilizando **Node.js** con el framework **Express**, y se conecta a una base de datos **MongoDB** mediante **Mongoose** como ODM (Object-Document Mapper).
-
----
-
-## 🚀 Estado Actual del Proyecto
-
-### ✅ Implementado
-
-| Módulo | Estado | Descripción |
-|--------|--------|-------------|
-| Estructura del proyecto | ✅ Completa | Arquitectura por capas bien organizada |
-| Modelos de datos | ✅ Completos | Product, Sale, User, Patient, Appointment |
-| CRUD de Productos | ✅ Funcional | Crear, listar, actualizar y eliminar productos |
-| Registro de Ventas | ✅ Funcional | Crear ventas con transacciones atómicas de MongoDB |
-| Validaciones | ✅ Implementadas | Validadores con `express-validator` para productos, usuarios y ventas |
-| Manejo de errores | ✅ Global | Middleware centralizado de errores |
-| Seguridad básica | ✅ Activa | Helmet para cabeceras HTTP, CORS habilitado |
-| Encriptación de contraseñas | ✅ Activa | bcrypt con hash automático al guardar usuarios |
-| Migración de datos | ✅ Disponible | Servicio para importar datos masivos desde archivos JSON |
-
-### 🔲 Pendiente
-
-| Módulo | Descripción |
-|--------|-------------|
-| Autenticación (Auth) | Middleware de JWT para proteger rutas (las dependencias ya están instaladas) |
-| Rutas de Usuarios | Endpoints para registro, login y gestión de usuarios |
-| Rutas de Pacientes | CRUD completo para gestionar pacientes |
-| Rutas de Citas | Endpoints para agendar, consultar y cancelar citas |
-| Frontend | Interfaz de usuario (aún no iniciado) |
+Este proyecto ha evolucionado de un prototipo básico a una aplicación robusta con una arquitectura profesional de doble capa (Frontend y Backend) utilizando tecnologías modernas de alto rendimiento.
 
 ---
 
-## 🏗️ Estructura del Proyecto
+## 🚀 Estado Actual del Proyecto (Marzo 2026)
 
-```
-Anti/
-├── backend/
-│   ├── .env                      ← Variables de entorno (puerto, URI de MongoDB, etc.)
-│   ├── package.json              ← Dependencias y scripts del proyecto
-│   └── src/
-│       ├── server.js             ← Punto de entrada: conecta la BD e inicia el servidor
-│       ├── app.js                ← Configuración de Express: middlewares y rutas
-│       ├── config/
-│       │   └── db.js             ← Conexión a MongoDB con Mongoose
-│       ├── models/               ← Esquemas de datos (Mongoose)
-│       │   ├── Product.js        ← Modelo de Producto
-│       │   ├── Sale.js           ← Modelo de Venta
-│       │   ├── User.js           ← Modelo de Usuario (con encriptación de contraseña)
-│       │   ├── Patient.js        ← Modelo de Paciente (con historial clínico)
-│       │   └── Appointment.js    ← Modelo de Cita Médica
-│       ├── controllers/          ← Lógica de los endpoints (reciben peticiones HTTP)
-│       │   ├── productController.js  ← CRUD de productos
-│       │   └── saleController.js     ← Creación de ventas
-│       ├── services/             ← Lógica de negocio compleja
-│       │   ├── SaleService.js        ← Transacciones atómicas para ventas
-│       │   └── MigrationService.js   ← Importación masiva de datos JSON
-│       ├── routes/               ← Definición de rutas HTTP
-│       │   ├── productRoutes.js  ← Rutas GET/POST/PUT/DELETE de productos
-│       │   └── saleRoutes.js     ← Ruta POST de ventas
-│       ├── validators/           ← Reglas de validación de datos
-│       │   ├── product.validator.js  ← Validaciones de producto
-│       │   ├── user.validator.js     ← Validaciones de usuario
-│       │   └── index.js              ← Archivo de barril (re-exporta todo)
-│       ├── middlewares/          ← Funciones intermedias reutilizables
-│       │   ├── errorHandler.js       ← Manejo global de errores
-│       │   └── validateRequest.js    ← Verifica errores de validación
-│       ├── repositories/         ← (Reservado para futuras consultas a BD)
-│       └── utils/                ← (Reservado para funciones utilitarias)
-```
+### ✅ Implementado y Operacional
+
+| Módulo | Tecnología | Descripción |
+|--------|------------|-------------|
+| **Backend API** | Node.js + TypeScript | Arquitectura por capas (Routes -> Controller -> Service). |
+| **Base de Datos** | MySQL + Prisma ORM | Esquema relacional con productos, lotes, ventas, usuarios y pacientes. |
+| **Frontend SPA** | React 19 + Vite | Interfaz rápida y reactiva con TypeScript. |
+| **UI/UX Cosmético** | Tailwind + shadcn/ui | Diseño moderno con paleta armoniosa y modo oscuro. |
+| **Gestión de Ventas** | Transacciones Prisma | Creación de ventas y tickets con ajuste automático de stock por lotes. |
+| **Historial de Ventas** | Tabla Dinámica | Visualización de transacciones pasadas y lógica de **Anulación (Voiding)** con reversión de inventario. |
+| **Dashboard** | Recharts | Gráficas de ventas semanales, categorías más vendidas y alertas de stock/caducidad. |
+| **Módulo Clínico** | CRUD Completo | Registro de pacientes y agenda de citas médicas. |
+| **Seguridad** | JWT + Roles | Autenticación robusta y control de acceso (Admin/Vendedor/Doctor). |
+| **Observabilidad** | Winston + Morgan | Logs estructurados para depuración en tiempo real. |
 
 ---
 
-## 🔧 ¿Cómo Funciona?
+## 🏗️ Arquitectura del Sistema
 
-### 1. Inicio del Servidor (`server.js`)
-Cuando se ejecuta `npm run dev`, el sistema:
-1. Carga las variables de entorno desde `.env` usando `dotenv`.
-2. Establece la conexión con MongoDB llamando a `connectDB()`.
-3. Levanta el servidor HTTP en el puerto configurado (por defecto `5000`).
+### 1. Backend (`backend/`)
+El corazón del sistema utiliza una **Arquitectura en Capas** para asegurar que el código sea mantenible y escalable.
 
-### 2. Configuración de la App (`app.js`)
-La aplicación Express se configura con los siguientes **middlewares** en este orden:
-1. **`express.json()`** — Permite recibir datos JSON en el cuerpo de las peticiones.
-2. **`cors()`** — Habilita peticiones desde otros dominios (necesario para el futuro frontend).
-3. **`helmet()`** — Agrega cabeceras HTTP de seguridad automáticamente.
-4. **`morgan('dev')`** — Registra cada petición HTTP en la consola para depuración.
+- **`prisma/schema.prisma`**: Definición de la base de datos (MySQL). Prisma genera tipos automáticos para todo el backend.
+- **`src/routes/`**: Define los puntos de entrada (p. ej. `/api/sales`, `/api/products`).
+- **`src/controllers/`**: Gestiona las peticiones HTTP, validando entradas antes de enviarlas a la lógica de negocio.
+- **`src/services/`**: Donde reside la **Lógica de Negocio**. Por ejemplo, `SaleService.ts` maneja transacciones complejas para asegurar que si una venta falla, el stock no se descuente incorrectamente.
+- **`src/validators/`**: Uso de **Zod** para validar que los datos lleguen en el formato correcto antes de tocar la base de datos.
+- **`src/middlewares/`**: Manejo global de errores, verificación de autenticación (JWT) y roles.
 
-Después monta las rutas:
-- `GET/POST /api/products` → rutas de productos
-- `POST /api/sales` → ruta de ventas
+### 2. Frontend (`frontend/`)
+Construido como una **SPA (Single Page Application)** moderna bajo un enfoque de **Feature-Driven Design**.
 
-Al final, se coloca el middleware de manejo de errores (`errorHandler`).
-
-### 3. Flujo de una Petición (ejemplo: crear un producto)
-
-```
-Cliente (Postman/Frontend)
-    │
-    │  POST /api/products  { name, sku, price, stock, category }
-    ▼
-productRoutes.js
-    │
-    │  1. productValidator  → Valida los campos requeridos
-    │  2. validateRequest   → Si hay errores, responde 400
-    │  3. createProduct     → Controlador que crea el producto
-    ▼
-productController.js
-    │
-    │  Verifica si ya existe un producto con el mismo SKU
-    │  Crea el producto en MongoDB con Product.create()
-    ▼
-MongoDB → Guarda el documento y responde con el producto creado (201)
-```
-
-### 4. Flujo de una Venta (con transacción atómica)
-
-```
-Cliente
-    │
-    │  POST /api/sales  { user, items: [{ product, quantity }] }
-    ▼
-saleRoutes.js
-    │
-    │  1. saleValidator     → Valida usuario e ítems
-    │  2. validateRequest   → Si hay errores, responde 400
-    │  3. createSale        → Controlador que delega al servicio
-    ▼
-SaleService.js  (transacción de MongoDB)
-    │
-    │  Para cada ítem:
-    │    ├─ Busca el producto
-    │    ├─ Verifica stock suficiente
-    │    ├─ Descuenta stock
-    │    └─ Calcula subtotal
-    │
-    │  Crea el documento Sale con el total calculado
-    │  Si todo es exitoso → commitTransaction()
-    │  Si algo falla      → abortTransaction() (revierte todo)
-    ▼
-MongoDB → Venta registrada + stock actualizado atómicamente
-```
+- **`src/features/`**: Módulos aislados por dominio (sales, inventory, clinical). Cada uno tiene sus propios componentes y lógica de API.
+- **`src/components/ui/`**: Componentes base de alta calidad (botones, modales, alertas) basados en Radix UI.
+- **`src/lib/api.ts`**: Cliente Axios configurado para comunicarse con el Backend.
+- **`src/contexts/`**: Gestión de estado global (p. ej. `AuthContext` para mantener la sesión del usuario).
 
 ---
 
-## 🧱 ¿Por Qué Esta Arquitectura?
+## 🔧 Componentes Clave y Lógica de Negocio
 
-El proyecto sigue una **arquitectura por capas** (Layered Architecture), que es una de las más utilizadas en aplicaciones backend profesionales. Cada capa tiene una responsabilidad específica:
+### Gestión de Lotes (Batches)
+A diferencia de sistemas simples, este software no solo rastrea "stock total", sino que rastrea **lotes específicos**:
+1. Un producto puede tener múltiples lotes con diferentes fechas de caducidad.
+2. Al vender, el sistema descuenta stock del lote seleccionado, previniendo la venta de productos caducados.
 
-### Separación de Responsabilidades
+### Lógica de Anulación de Ventas
+El sistema permite anular ventas (voiding), lo cual dispara un proceso automático de:
+- Cambio de estado de la venta a `voided`.
+- Devolución del stock retirado a sus lotes originales.
+- Actualización de las métricas del Dashboard en tiempo real.
 
-| Capa | Carpeta | Responsabilidad |
-|------|---------|-----------------|
-| **Rutas** | `routes/` | Define los endpoints HTTP y encadena middlewares con controladores |
-| **Validadores** | `validators/` | Declara las reglas de validación de datos de entrada |
-| **Middlewares** | `middlewares/` | Funciones reutilizables que procesan peticiones antes de llegar al controlador |
-| **Controladores** | `controllers/` | Recibe la petición HTTP, extrae datos, llama al servicio/modelo y responde |
-| **Servicios** | `services/` | Contiene la lógica de negocio compleja (ej: transacciones de ventas) |
-| **Modelos** | `models/` | Define la estructura de datos y reglas de la base de datos |
-| **Configuración** | `config/` | Conexiones externas (base de datos, variables de entorno) |
-
-### Ventajas de esta estructura:
-
-1. **Mantenibilidad** — Cada archivo tiene una sola responsabilidad. Si necesitas cambiar la lógica de ventas, solo tocas `SaleService.js`, no las rutas ni los controladores.
-
-2. **Escalabilidad** — Agregar un nuevo módulo (ej: pacientes) solo requiere crear sus archivos en cada capa sin modificar los existentes.
-
-3. **Testabilidad** — Los servicios pueden probarse independientemente de las rutas y de la base de datos.
-
-4. **Reutilización** — Los middlewares (`errorHandler`, `validateRequest`) se usan en todas las rutas sin duplicar código.
-
-5. **Seguridad** — La validación ocurre *antes* del controlador, evitando que datos incorrectos lleguen a la lógica de negocio.
+### Dashboard Inteligente
+El panel principal no es solo estático; analiza los datos para mostrar:
+- **Ventas semanales**: Gráfico de barras interactivo.
+- **Top Categorías**: Gráfico circular con la distribución de ventas.
+- **Alertas Críticas**: Identifica productos por debajo del stock mínimo o lotes que vencen en los próximos 30 días.
 
 ---
 
 ## 📦 Tecnologías Utilizadas
 
-| Tecnología | Versión | Uso |
-|-----------|---------|-----|
-| **Node.js** | — | Entorno de ejecución del servidor |
-| **Express** | 5.2.1 | Framework web para crear la API REST |
-| **MongoDB** | — | Base de datos NoSQL orientada a documentos |
-| **Mongoose** | 9.2.1 | ODM para modelar datos y conectar con MongoDB |
-| **bcryptjs** | 3.0.3 | Encriptación segura de contraseñas (hash + salt) |
-| **jsonwebtoken** | 9.0.3 | Generación de tokens JWT (preparado para autenticación) |
-| **express-validator** | 7.3.1 | Validación y saneamiento de datos de entrada |
-| **helmet** | 8.1.0 | Cabeceras HTTP de seguridad |
-| **cors** | 2.8.6 | Habilitar peticiones cross-origin |
-| **morgan** | 1.10.1 | Registro de peticiones HTTP en consola |
-| **dotenv** | 17.3.1 | Carga de variables de entorno desde `.env` |
-| **nodemon** | 3.1.11 | Reinicio automático del servidor en desarrollo |
+| Categoría | Tecnologías |
+|-----------|-------------|
+| **Lenguajes** | TypeScript (Backend y Frontend) |
+| **Frameworks** | React 19, Express 5 |
+| **Base de Datos** | MySQL + Prisma ORM |
+| **Estilos** | Tailwind CSS + shadcn/ui |
+| **Visualización** | Recharts (Gráficas) |
+| **Validación** | Zod |
+| **Testing** | Vitest |
+| **Seguridad** | JWT, bcryptjs, Helmet |
 
 ---
 
-## 📡 Endpoints Disponibles
+## ▶️ Cómo Ejecutar el Proyecto
 
-### Productos (`/api/products`)
+### Requisitos Previos
+- Node.js v18+
+- MySQL Server
 
-| Método | Ruta | Descripción | Validación |
-|--------|------|-------------|------------|
-| `GET` | `/api/products` | Obtener todos los productos | No |
-| `POST` | `/api/products` | Crear un producto nuevo | Sí (nombre, SKU, precio, stock, categoría) |
-| `PUT` | `/api/products/:id` | Actualizar un producto por ID | No |
-| `DELETE` | `/api/products/:id` | Eliminar un producto por ID | No |
+### Configuración del Backend
+```bash
+cd backend
+npm install
+# Configura tu .env (DATABASE_URL, JWT_SECRET)
+npx prisma generate
+npm run dev
+```
 
-### Ventas (`/api/sales`)
-
-| Método | Ruta | Descripción | Validación |
-|--------|------|-------------|------------|
-| `POST` | `/api/sales` | Registrar una nueva venta | Sí (usuario, ítems con producto y cantidad) |
+### Configuración del Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+*El frontend correrá en `http://localhost:5173` y el backend en `http://localhost:5000`.*
 
 ---
 
-## 🗄️ Modelos de Datos
-
-### Product (Producto)
-Representa un medicamento o artículo de la farmacia.
-- `name` — Nombre del producto (obligatorio)
-- `description` — Descripción (opcional)
-- `sku` — Código único del producto (obligatorio, único)
-- `price` — Precio unitario (obligatorio, mínimo 0)
-- `stock` — Cantidad en inventario (obligatorio, mínimo 0)
-- `category` — Categoría (ej: analgésicos, antibióticos)
-- `expiryDate` — Fecha de caducidad (opcional)
-
-### Sale (Venta)
-Registra cada transacción de venta.
-- `user` — Referencia al usuario que realizó la venta
-- `items[]` — Lista de productos vendidos (producto, cantidad, precio histórico)
-- `totalAmount` — Total calculado de la venta
-- `status` — Estado: `completed`, `cancelled`, o `refunded`
-
-### User (Usuario)
-Usuarios del sistema con roles.
-- `name`, `email` (único), `password` (encriptado con bcrypt)
-- `role` — Uno de: `admin`, `doctor`, `employee`
-- Contraseña se encripta automáticamente antes de guardarse
-
-### Patient (Paciente)
-Registro de pacientes clínicos.
-- `firstName`, `lastName`, `email` (único), `phone`, `dob`
-- `history[]` — Historial clínico embebido (fecha, notas, diagnóstico, doctor)
-
-### Appointment (Cita Médica)
-Agenda de citas.
+*Documento actualizado el 7 de marzo de 2026 para reflejar el paso de MongoDB a MySQL/Prisma y la implementación del Frontend.*
+da de citas.
 - `patient` — Referencia al paciente
 - `doctor` — Referencia al usuario con rol doctor
 - `date` — Fecha y hora de la cita
